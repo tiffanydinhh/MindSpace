@@ -1,16 +1,21 @@
 @font-face {
     font-family: InstrumentSerif;
-    src: url("./assets/InstrumentSerif.ttf");
+    src: url("./fonts/InstrumentSerif.ttf");
 }
 
 @font-face {
     font-family: InstrumentSans;
-    src: url("./assets/InstrumentSans.ttf");
+    src: url("./fonts/InstrumentSans.ttf");
 }
 
 @font-face {
     font-family: AmericanTypewriter;
-    src: url("./assets/AmericanTypewriter.ttf");
+    src: url("./fonts/AmericanTypewriter.ttf");
+}
+
+@font-face {
+    font-family: IosevkaCharon;
+    src: url("./fonts/IosevkaCharon.ttf");
 }
 
 h1 {
@@ -49,23 +54,43 @@ hr {
     border: none;
 }
 
+#introText {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    font-size: 18px;
+    text-align: center;
+}
+
 h2 {
     font-family: AmericanTypewriter;
-    margin-top: 50px;
-    text-align: center;
 }
 
-p {
+.mindSpaceText {
+    font-family: InstrumentSerif;
+    font-size: 40px;
+    margin-top: -15px;
+}
+
+#websiteIntroText1 {
+    font-family: IosevkaCharon;
+    max-width: 20rem;
+    margin: auto;
+}
+
+#websiteIntroText2 {
     font-family: InstrumentSans;
+    font-size: 16px;
+    margin-top: 5rem;
+}
+
+/* Text for all sections */
+#journalText,
+#tasksText,
+#activitiesText {
+    font-family: IosevkaCharon;
     text-align: center;
+    font-size: 20px;
 }
-
-.introText {
-    margin-bottom: 5rem;
-    font-size: 18px;
-}
-
-/* Buttons for different pages */
 
 /* Journal */
 
@@ -74,12 +99,7 @@ p {
     flex-direction: column;
     width: 20rem;
     margin-left: 15%;
-}
-
-#journalText {
-    font-family: AmericanTypewriter;
-    text-align: center;
-    font-size: 20px;
+    margin-right: auto;
 }
 
 #hJournalButton {
@@ -94,16 +114,11 @@ p {
 
 #tasksSection {
     margin-top: 3rem;
-    margin-left: 65%;
+    margin-right: 15%;
+    margin-left: auto;
     display: flex;
     flex-direction: column;
     width: 20rem;
-}
-
-#tasksText {
-    font-family: AmericanTypewriter;
-    text-align: center;
-    font-size: 20px;
 }
 
 #hTasksButton {
@@ -123,12 +138,6 @@ p {
     margin-left: 15%;
 }
 
-#activitiesText {
-    font-family: AmericanTypewriter;
-    text-align: center;
-    font-size: 20px;
-}
-
 #hActivitiesButton {
     font-family: InstrumentSans;
     font-size: 18px;
@@ -142,7 +151,8 @@ p {
 button {
     background-color: #fdf0ae;
     border: solid black 1px;
-    border-radius: 5px;;
+    border-radius: 10px;
+    padding: 8px 15px 8px 15px;
 }
 
 button:hover {
