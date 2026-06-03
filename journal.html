@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MindSpace</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <h1>MindSpace</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href ="about.html">About</a></li>
+                <li><a href ="journal.html">Journal</a></li>
+                <li><a href ="tasks.html">Tasks</a></li>
+                <li><a href ="activities.html">Activities</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <hr>
+
+    <div class="introText">
+        <h2>Journal</h2>
+        <p>Here is your journal! Write down whatever is on your mind.</p>
+    </div>
+
+    <textarea id="journalInput" name="journalInput" placeholder="Insert text here..."></textarea>
+    <button id="journalButton" onclick="displayText()">Submit</button>
+    <p id="displayArea"></p>
+
+</body>
+
+</html>
