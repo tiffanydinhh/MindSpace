@@ -18,6 +18,42 @@
     src: url("./fonts/IosevkaCharon.ttf");
 }
 
+/* ---------------- Home Page ----------------*/
+
+/* Vectors */
+.vector1 {
+    position: absolute;
+    width: 330px;
+    left: auto;
+    right: 0;
+    top: 180px;
+    z-index: -1;
+}
+
+.vector2 {
+    position: absolute;
+    width: 330px;
+    height: 336.95px;
+    left: 0;
+    right: auto;
+    top: 230px;
+    z-index: -1;
+}
+
+.homeImage {
+    width: 289px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+#homeImages {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
 h1 {
     font-family: InstrumentSerif;
     font-size: 35px;
@@ -54,7 +90,7 @@ hr {
     border: none;
 }
 
-#introText {
+#homeIntroText {
     margin-bottom: 5rem;
     margin-top: 5rem;
     font-size: 18px;
