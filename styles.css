@@ -21,7 +21,7 @@
 /* ---------------- Home Page ----------------*/
 
 /* Vectors */
-.vector1 {
+#hvector1 {
     position: absolute;
     width: 330px;
     left: auto;
@@ -30,13 +30,43 @@
     z-index: -1;
 }
 
-.vector2 {
+#hvector2 {
     position: absolute;
     width: 330px;
     height: 336.95px;
     left: 0;
     right: auto;
     top: 230px;
+    z-index: -1;
+}
+
+#hvector3 {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    left: 0;
+    right: auto;
+    top: 1100px;
+    z-index: -1;
+}
+
+#hvector4 {
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    right: 0;
+    left: auto;
+    top: 1300px;
+    z-index: -1;
+}
+
+#hvector5 {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    left: 0;
+    right: auto;
+    top: 1750px;
     z-index: -1;
 }
 
@@ -50,8 +80,8 @@
 #homeImages {
     display: flex;
     gap: 70px;
-    justify-content: center;
-    margin-bottom: 10rem;
+    justify-content: center;    /* Centers horizontally */
+    margin-bottom: 5rem;
 }
 
 h1 {
@@ -80,7 +110,7 @@ ul a:hover {
 
 #navbar {
     display: flex;
-    align-items: center;
+    align-items: center;     /* Center vertically (if parent has height) */
     justify-content: space-between;
 }
 
@@ -88,6 +118,7 @@ hr {
     height: 1px;
     background-color: black;
     border: none;
+    margin-bottom: 4rem;
 }
 
 #homeIntroText {
@@ -99,6 +130,7 @@ hr {
 
 h2 {
     font-family: AmericanTypewriter;
+    text-align: center;
 }
 
 .mindSpaceText {
@@ -117,6 +149,9 @@ h2 {
     font-family: InstrumentSans;
     font-size: 16px;
     margin-top: 5rem;
+    margin-bottom: 7rem;
+    text-align: center; /* Horizontal alignment */
+
 }
 
 /* Text for all sections */
@@ -134,35 +169,19 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 20rem;
-    margin-left: 15%;
+    margin-left: 20%;
     margin-right: auto;
-}
-
-#hJournalButton {
-    font-family: InstrumentSans;
-    font-size: 18px;
-    width: fit-content;
-    height: fit-content;
-    align-self: center;
 }
 
 /* Tasks */
 
 #tasksSection {
-    margin-top: 3rem;
-    margin-right: 15%;
+    margin-top: 7rem;
+    margin-right: 20%;
     margin-left: auto;
     display: flex;
     flex-direction: column;
     width: 20rem;
-}
-
-#hTasksButton {
-    font-family: InstrumentSans;
-    font-size: 18px;
-    width: fit-content;
-    height: fit-content;
-    align-self: center;
 }
 
 /* Activities */
@@ -171,29 +190,45 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 20rem;
-    margin-left: 15%;
+    margin-left: 20%;
+    margin-top: 7rem;
 }
 
 #hActivitiesButton {
-    font-family: InstrumentSans;
-    font-size: 18px;
-    width: fit-content;
-    height: fit-content;
-    align-self: center;
     margin-bottom: 40px;
 }
 
 /* All buttons */
 button {
+    font-family: InstrumentSans;
+    font-size: 18px;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
     background-color: #fdf0ae;
     border: solid black 1px;
     border-radius: 10px;
     padding: 8px 15px 8px 15px;
+    transition: transform 0.2s ease-in-out; /* Smooth animation for transforming */
+
 }
 
 button:hover {
     cursor: pointer;
+    transform: scale(1.1);  /* Scale up by 10% */
 }
+
+#aboutSection {
+    display: flex;
+    flex-direction: column;
+}
+
+#hAboutButton {
+    margin-top: 10px;
+    margin-bottom: 7rem;
+}
+
+/* ---------------- Journal Page ----------------*/
 
 textarea {
     display: block;
