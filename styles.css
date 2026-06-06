@@ -131,6 +131,8 @@ hr {
 h2 {
     font-family: AmericanTypewriter;
     text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
 }
 
 .mindSpaceText {
@@ -139,10 +141,11 @@ h2 {
     margin-top: -15px;
 }
 
-#websiteIntroText1 {
+p {
     font-family: IosevkaCharon;
     max-width: 20rem;
     margin: auto;
+    text-align: center;
 }
 
 #websiteIntroText2 {
@@ -195,7 +198,7 @@ h2 {
 }
 
 #hActivitiesButton {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 /* All buttons */
@@ -228,7 +231,45 @@ button:hover {
     margin-bottom: 7rem;
 }
 
-/* ---------------- Journal Page ----------------*/
+
+/* ---------------- About Page ---------------- */
+
+
+#aboutSelection {
+    margin-top: 3.5rem;
+    display: flex;
+    gap: 14rem;
+    justify-content: center;
+    font-family: AmericanTypewriter;
+    font-size: 17px;
+    background-color: #DBF6CF;
+}
+
+.aboutSelectionText {
+    margin: 0;
+    height: 80px;
+    padding: 10px;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+}
+
+.aboutSelectionText:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #B6DAA7;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------- Journal Page ---------------- */
 
 textarea {
     display: block;
