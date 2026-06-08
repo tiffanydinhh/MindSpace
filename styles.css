@@ -141,7 +141,7 @@ h2 {
     margin-top: -15px;
 }
 
-p {
+.pageDescription {
     font-family: IosevkaCharon;
     max-width: 20rem;
     margin: auto;
@@ -235,6 +235,8 @@ button:hover {
 /* ---------------- About Page ---------------- */
 
 
+/* Why MindSpace Section */
+
 #aboutSelection {
     margin-top: 3.5rem;
     display: flex;
@@ -261,11 +263,49 @@ button:hover {
     background-color: #B6DAA7;
 }
 
+.aboutSectionText {
+    text-align: left;
+    font-size: 18px;
+    font-family: IosevkaCharon;
+}
+
+#aboutSection1Header {
+    text-align: left;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: IosevkaCharon;
+}
+
+.aboutImage {
+    width: 300px;
+    height: auto;
+    border: 3px solid black;
+}
+
+.aboutDescription {
+    display: flex;
+    margin-top: 5rem;
+    gap: 15%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.aboutSectionAllText {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+}
+
+#aboutSectionText2 {
+    max-width: 500px;
+    text-align: left;
+    font-size: 18px;
+    font-family: IosevkaCharon;
+}
 
 
-
-
-
+/* Meet the Developer Section */
 
 
 
