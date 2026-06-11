@@ -18,6 +18,11 @@
     src: url("./fonts/IosevkaCharon.ttf");
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 /* ---------------- Home Page ----------------*/
 
 /* Vectors */
@@ -235,7 +240,6 @@ button:hover {
 /* ---------------- About Page ---------------- */
 
 
-/* Why MindSpace Section */
 
 #aboutSelection {
     margin-top: 3.5rem;
@@ -252,9 +256,11 @@ button:hover {
     height: 80px;
     padding: 10px;
     text-align: center;
-    
     display: flex;
     align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
 }
 
 .aboutSelectionText:hover {
@@ -262,6 +268,8 @@ button:hover {
     color: white;
     background-color: #B6DAA7;
 }
+
+/* Why MindSpace Section */
 
 .aboutSectionText {
     text-align: left;
@@ -307,6 +315,46 @@ button:hover {
 
 /* Meet the Developer Section */
 
+#theDeveloperText {
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: IosevkaCharon;
+    text-align: center;
+}
+
+#developerImage {
+    width: 220px;
+    height: auto;
+    border-radius: 200px;
+    border: 3px solid black;
+}
+
+#developerName {
+    font-family: IosevkaCharon;
+    font-size: 20px;
+}
+
+#developerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#developerInfoText {
+    text-align: left;
+    font-size: 18px;
+    font-family: IosevkaCharon;
+    max-width: 500px;
+}
+
+#aboutDeveloperSection {
+    margin-top: 50px;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
 
 
 /* ---------------- Journal Page ---------------- */
