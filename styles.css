@@ -380,19 +380,17 @@ button:hover {
     z-index: -1;
 }
 
-#journalContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#journalContainer img {
+#journalImg {
     display: block;
-    max-width: 100%;
+    margin: auto;
+    width: 50%;
+    height: auto;
 }
 
-#journalContainer textarea {
-    position: absolute;
+textarea {
+    width: 300px;
+    display: block;
+    margin: auto;
     background-color: #ffffff00;
 }
 
