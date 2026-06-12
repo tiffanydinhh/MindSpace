@@ -380,11 +380,20 @@ button:hover {
     z-index: -1;
 }
 
-textarea {
+#journalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#journalContainer img {
     display: block;
-    margin: auto;
-    width: 40rem;
-    height: 20rem;
+    max-width: 100%;
+}
+
+#journalContainer textarea {
+    position: absolute;
+    background-color: #ffffff00;
 }
 
 #journalButton {
@@ -392,8 +401,4 @@ textarea {
     margin: 20px auto;
     font-size: 16px;
     font-family: AmericanTypewriter;
-}
-
-#journalInput {
-    margin-top: 50px;
 }
