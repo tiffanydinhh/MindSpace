@@ -453,6 +453,8 @@ textarea {
     font-family: Inika;
     border: 1px solid black;
     border-radius: 7px;
+    font-size: 16px;
+    padding: 8px;
 }
 
 .row {
@@ -469,6 +471,11 @@ textarea {
     position: relative; /* If any elements are absolute, use this container as a point of reference */
     padding: 12px 8px 12px 70px;    /* Big left padding for unchecked circle image */
     font-size: 17px;
+    background-color: #F3F3F3;
+    margin-bottom: 19px;
+    margin-right: 40px;
+    border-radius: 5px;
+    box-shadow: 3px 4px 4px -1px rgba(0, 0, 0, 0.25);
 }
 
 #tasksContainer li::before {
@@ -486,8 +493,25 @@ textarea {
 #tasksContainer li.checked {
     text-decoration: line-through;
     color: rgb(102, 102, 102);
+
 }
 
 #tasksContainer li.checked::before {
     background-image: url(./images/checked.png);
+}
+
+#tasksContainer li span {
+    position: absolute;
+    right: 20px;
+    top: 6px;
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#tasksContainer li span:hover {
+    background-color: rgb(218, 218, 218);;
 }

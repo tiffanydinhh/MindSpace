@@ -28,3 +28,15 @@ function addTask() {
         li.appendChild(x);
     }
 }
+
+// if user clicks check circle or x
+tasksContainer.addEventListener("click", function(e) {  // when an element in the tasksContainer is clicked, trigger function(e)
+     // if the list element was clicked, toggle the checked class in CSS
+    if(e.target.tagName == "LI") {
+        e.target.classList.toggle("checked");
+    }
+    // if the span element was clicked, remove the list item from the parent element of span (li)
+    else if (e.target.tagName == "SPAN") {
+        e.target.parentElement.remove();
+    }
+});
