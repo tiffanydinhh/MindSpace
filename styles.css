@@ -1,3 +1,5 @@
+/* Custom Fonts */
+
 @font-face {
     font-family: InstrumentSerif;
     src: url("./fonts/InstrumentSerif.ttf");
@@ -17,6 +19,17 @@
     font-family: IosevkaCharon;
     src: url("./fonts/IosevkaCharon.ttf");
 }
+
+@font-face {
+    font-family: IosevkaCharon;
+    src: url("./fonts/IosevkaCharon.ttf");
+}
+
+@font-face {
+    font-family: Inika;
+    src: url("./fonts/Inika.ttf");
+}
+
 
 html,
 body {
@@ -95,7 +108,7 @@ h1 {
     margin-left: 10px;
 }
 
-ul {
+nav ul {
     display: flex;
     list-style: none;
     gap: 15px
@@ -106,7 +119,7 @@ ul a {
     color: black;
     font-size: 18px;
     font-family: InstrumentSans;
-    margin-right: 10px;;
+    margin-right: 10px;
 }
 
 ul a:hover {
@@ -399,4 +412,82 @@ textarea {
     margin: 20px auto;
     font-size: 16px;
     font-family: AmericanTypewriter;
+}
+
+
+/* ---------------- Tasks Page ---------------- */
+
+#to-doContainer {
+    max-width: 1000px;
+    height: 600px;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 12px;
+    background-color: #DBF6CF;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;  /* needed to center white container inside */
+    justify-content: center;    /* horizontal centering */
+    align-items: center;    /* vertical centering */
+}
+
+#to-doList {
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 3px 4px 4px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    width: 950px;
+    height: 550px;
+    text-align: center;
+}
+
+#to-doList h3 {
+    font-family: Inika;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+#inputTask {
+    width: 50%;
+    font-family: Inika;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.row {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+#tasksContainer li {
+    list-style: none;
+    text-align: left;
+    font-family: Inika;
+    cursor: pointer;
+    position: relative; /* If any elements are absolute, use this container as a point of reference */
+    padding: 12px 8px 12px 70px;    /* Big left padding for unchecked circle image */
+    font-size: 17px;
+}
+
+#tasksContainer li::before {
+    content: '';    /* Required for elements to appear */
+    position: absolute; /* Precise placing, works with position: relative above */
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    left: 8px;
+}
+
+#tasksContainer li.checked {
+    text-decoration: line-through;
+    color: rgb(102, 102, 102);
+}
+
+#tasksContainer li.checked::before {
+    background-image: url(./images/checked.png);
 }

@@ -24,15 +24,29 @@
     <hr>
 
     <div id="intro-text">
-        <h2>Tasks</h2>
-        <p>You can keep track of tasks you need to complete here!</p>
+        <h2>-Tasks-</h2>
+        <p class="pageDescription">You can keep track of tasks you need to complete here!</p>
     </div>
 
-    <div id="todoContainer">
-        <div>
+    <div id="to-doContainer">
+        <div id="to-doList">
             <h3>To-Do List</h3>
+
+            <div class="row">
+                <input type="text" name="task" id="inputTask" placeholder="Add a new task...">
+            <button onclick="addTask()">Add</button>
+            </div>
+
+            <div>
+                <ul id="tasksContainer">
+                    <!-- <li>Task</li> -->
+                </ul>
+            </div>
+
         </div>
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 
