@@ -9,12 +9,6 @@
 
 <body>
 
-    <div>
-        <img src="./assets/vector3.svg" id="jvector1" alt="">
-        <img src="./assets/vector1.svg" id="jvector2" alt="">
-    </div>
-
-
     <div id="navbar">
         <h1>MindSpace</h1>
 
@@ -36,10 +30,17 @@
         <p class="pageDescription">Need a space to clear your mind? Write down whatever you’d like in your own journal.</p>
     </div>
 
-    <textarea name="journalInput" id="journalInput" placeholder="Insert text here..."></textarea>
+    <div id="journalContainer">
+        
+        <div id="entriesContainer">
+            <input type="text" name="search" id="journalSearch" placeholder="Search...">
+        </div>
 
-    <button id="journalButton" onclick="displayText()">Submit</button>
-    <p id="displayArea"></p>
+        <div id="newEntryContainer">
+
+        </div>
+
+    </div>
 
 </body>
 
