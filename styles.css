@@ -440,6 +440,7 @@ textarea {
     width: 950px;
     height: 550px;
     text-align: center;
+    overflow-y: scroll; /* when content overflows, container has a scroll bar */
 }
 
 #to-doList h3 {

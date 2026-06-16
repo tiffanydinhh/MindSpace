@@ -27,6 +27,7 @@ function addTask() {
         x.innerHTML = "\u00d7";
         li.appendChild(x);
     }
+    saveData();
 }
 
 // if user clicks check circle or x
@@ -34,9 +35,23 @@ tasksContainer.addEventListener("click", function(e) {  // when an element in th
      // if the list element was clicked, toggle the checked class in CSS
     if(e.target.tagName == "LI") {
         e.target.classList.toggle("checked");
+        saveTask();
     }
     // if the span element was clicked, remove the list item from the parent element of span (li)
     else if (e.target.tagName == "SPAN") {
         e.target.parentElement.remove();
+        saveTask();
     }
 });
+
+// save tasks user added/checked when reloading or closing browser
+function saveTask() {
+    localStorage.setItem("task", tasksContainer.innerHTML);
+}
+
+// pass task using key to retrieve data
+function showTask() {
+    tasksContainer.innerHTML = localStorage.getItem("task");
+}
+
+showTask();
