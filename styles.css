@@ -401,6 +401,7 @@ button:hover {
     position: relative;
     text-align: center;
     flex: 1;
+    align-items: center;
 }
 
 #newEntryContainer {
@@ -416,12 +417,13 @@ button:hover {
 
 #journalSearch {
     margin-top: 30px;
-    width: 300px;
+    width: 250px;
     padding: 10px;
     box-sizing: border-box;
     font-size: 14px;
     border-radius: 7px;
     border: 1px solid black;
+    margin-bottom: 40px;
 }
 
 
@@ -480,10 +482,20 @@ button:hover {
     text-align: left;
     cursor: pointer;
     font-family: Inika;
-    font-size: 17px;
+    font-size: 15px;
     padding: 10px 70px 10px 15px;
     background-color: #F3F3F3;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    max-width: 200px;
+    padding: 35px 35px 35px 20px;
+    border-radius: 12px;
+    box-shadow: 3px 4px 4px -1px rgba(0, 0, 0, 0.25);
+    font-weight: bolder;
+}
+
+span {
+    font-size: 13px;
+    margin-bottom: 15px;
 }
 
 /* ---------------- Tasks Page ---------------- */
