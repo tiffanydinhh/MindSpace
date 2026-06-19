@@ -1,12 +1,35 @@
 // ---------------- Journal Page ----------------
 
-function displayText() {
-    // gets value/data from journal input and stores in variable
-    const input = document.getElementById("journalInput").value;
+const entryTitleInput = document.getElementById("entryTitleInput");
+const dateInput = document.getElementById("dateInput");
+const entryInput = document.getElementById("entryInput");
 
-    // set display text to value/data stored in variable
-    document.getElementById("displayArea").textContent = input;
+const entries = document.getElementById("entries");
+
+
+// function that adds new list item when clicking the add button
+function addEntry() {
+    if (entryTitleInput.value == '' || dateInput.value == '' || entryInput.value == '') {
+        alert("Please fill all text fields");
+    }
+    else {
+        let li = document.createElement("li");
+        li.innerHTML = entryTitleInput.value; // Replace HTML for list item (entry title) to user input
+
+        let span = document.createElement("span");
+        span.innerHTML = dateInput.value;
+
+        let br = document.createElement("br");
+        
+        li.appendChild(span);
+        li.appendChild(br);
+        entries.appendChild(li);
+
+    }
 }
+
+
+
 
 // ---------------- Tasks Page ----------------
 

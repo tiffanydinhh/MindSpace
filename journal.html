@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>MindSpace</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -38,9 +37,9 @@
 
                 <div>
                     <ul id="entries">
-                        <li><span>June 24, 2026</span><br>Bro, I'm Cooked</li>
+                        <li><span>Jan 16, 2026</span><br>Bro, I'm Cooked</li>
                         <li><span>March 01, 2026</span><br>Another Long Day</li>
-                        <li><span>Jan 16, 2026</span><br>Stressed at Work</li>
+                        <li><span>June 24, 2026</span><br>Stressed at Work</li>
                     </ul>
                 </div>
 
@@ -52,11 +51,13 @@
                 <input type="text" name="date" id="dateInput" placeholder="Date">
                 <textarea name="entry" id="entryInput" placeholder="Start journal entry here..."></textarea>
 
-                <button id="addEntryButton">Add</button>
+                <button onclick="addEntry()" id="addEntryButton">Add</button>
             </div>
         </div>
 
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 

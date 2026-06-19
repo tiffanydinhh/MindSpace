@@ -402,6 +402,7 @@ button:hover {
     text-align: center;
     flex: 1;
     align-items: center;
+    overflow-y: scroll;
 }
 
 #newEntryContainer {
@@ -493,7 +494,7 @@ button:hover {
     font-weight: bolder;
 }
 
-span {
+#entries li span {
     font-size: 13px;
     margin-bottom: 15px;
 }
