@@ -499,6 +499,12 @@ button:hover {
     margin-bottom: 15px;
 }
 
+.deleteEntry {
+    height: 35px;
+    font-size: 60px;
+    float: right;
+}
+
 /* ---------------- Tasks Page ---------------- */
 
 #to-doContainer {

@@ -13,22 +13,37 @@ function addEntry() {
         alert("Please fill all text fields");
     }
     else {
-        let li = document.createElement("li");
-        li.innerHTML = entryTitleInput.value; // Replace HTML for list item (entry title) to user input
+        let li = document.createElement("li");  // create li element first
+        let x = document.createElement("span");
+        x.className = "deleteEntry";
 
-        let span = document.createElement("span");
-        span.innerHTML = dateInput.value;
+        li.innerHTML = "<span>" + dateInput.value + "</span><br>" + entryTitleInput.value;
+        x.innerHTML = "\u00d7";
 
-        let br = document.createElement("br");
-        
-        li.appendChild(span);
-        li.appendChild(br);
         entries.appendChild(li);
-
+        li.appendChild(x);
+        saveEntry();
     }
 }
 
+// user clicks x
+entries.addEventListener("click", function(e) {
+    if (e.target.tagName == "SPAN") {
+        e.target.parentElement.remove();
+        saveEntry();
+    }
+});
 
+
+function saveEntry() {
+    localStorage.setItem("entry", entries.innerHTML);
+}
+
+function showEntry() {
+    entries.innerHTML  = localStorage.getItem("entry");
+}
+
+showEntry();
 
 
 // ---------------- Tasks Page ----------------
@@ -50,7 +65,6 @@ function addTask() {
         x.innerHTML = "\u00d7";
         li.appendChild(x);
     }
-    saveData();
 }
 
 // if user clicks check circle or x
