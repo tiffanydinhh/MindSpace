@@ -252,9 +252,10 @@ button:hover {
 
 /* ---------------- About Page ---------------- */
 
-#aboutSelection {
+.pageSelection {
     margin-top: 3.5rem;
     display: flex;
+    min-width: 100vh;
     gap: 14rem;
     justify-content: center;
     font-family: AmericanTypewriter;
@@ -262,7 +263,7 @@ button:hover {
     background-color: #DBF6CF;
 }
 
-.aboutSelectionText {
+.pageSelectionText {
     margin: 0;
     height: 80px;
     padding: 10px;
@@ -274,7 +275,7 @@ button:hover {
     color: black;
 }
 
-.aboutSelectionText:hover {
+.pageSelectionText:hover {
     cursor: pointer;
     color: white;
     background-color: #B6DAA7;
@@ -613,3 +614,36 @@ button:hover {
 #tasksContainer li span:hover {
     background-color: rgb(218, 218, 218);
 }
+
+
+/* ---------------- About Page ---------------- */
+
+.activitySection {
+    display: flex;
+    margin-top: 5rem;
+    gap: 15%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.activityImg {
+    width: 250px;
+    height: auto;
+    border: 3px solid black;
+}
+
+.activityHeader {
+    text-align: left;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: IosevkaCharon;
+}
+
+.activityDescription {
+    max-width: 500px;
+    text-align: left;
+    font-size: 18px;
+    font-family: IosevkaCharon;
+}
+
