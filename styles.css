@@ -500,9 +500,16 @@ button:hover {
 }
 
 .deleteEntry {
-    height: 35px;
-    font-size: 60px;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    border-radius: 50%;
     float: right;
+    text-align: center;
+}
+
+.deleteEntry:hover {
+    background-color: rgb(218, 218, 218);
 }
 
 /* ---------------- Tasks Page ---------------- */
@@ -604,5 +611,5 @@ button:hover {
 }
 
 #tasksContainer li span:hover {
-    background-color: rgb(218, 218, 218);;
+    background-color: rgb(218, 218, 218);
 }
