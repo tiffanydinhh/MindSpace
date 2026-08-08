@@ -1,8 +1,21 @@
 const entryTitleInput = document.getElementById("entryTitleInput");
 const dateInput = document.getElementById("dateInput");
 const entryInput = document.getElementById("entryInput");
-
 const entries = document.getElementById("entries");
+const searchInput = document.getElementById("searchInput");
+
+// function that allows user to filter list items with search bar
+searchInput.addEventListener('input', ()=> {
+    const filterValue = searchInput.value.toLowerCase();    // filterValue = user input in lowercase
+    const listItems = entries.getElementsByTagName("li");   // listItems = each list item
+
+    // create array from listItems and go through each li item
+    Array.from(listItems).forEach((item) => {
+        const text = item.textContent.toLowerCase();    // text = text content in li item in lowercase
+        // display item that includes whatever user entered in search input (filterValue)
+        item.style.display = text.includes(filterValue) ? '' : 'none';  // if li item text includes filterValue, then show it (do nothing since condition is true), else hide it (none)
+    })
+})
 
 
 // function that adds new list item when clicking the add button
