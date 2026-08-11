@@ -108,10 +108,16 @@ body {
     margin-bottom: 5rem;
 }
 
-h1 {
+h1 a {
     font-family: InstrumentSerif;
     font-size: 35px;
     margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+h1:hover {
+    cursor: pointer;
 }
 
 nav ul {
