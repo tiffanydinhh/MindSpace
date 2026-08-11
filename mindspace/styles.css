@@ -93,6 +93,12 @@ body {
     height: auto;
     border: 3px solid black;
     border-radius: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.homeImage:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 #homeImages {
@@ -149,7 +155,7 @@ hr {
 h2 {
     font-family: AmericanTypewriter;
     text-align: center;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: lighter;
 }
 
@@ -161,6 +167,7 @@ h2 {
 
 .pageDescription {
     font-family: IosevkaCharon;
+    font-size: 18px;
     max-width: 20rem;
     margin: auto;
     text-align: center;
@@ -168,7 +175,7 @@ h2 {
 
 #websiteIntroText2 {
     font-family: InstrumentSans;
-    font-size: 16px;
+    font-size: 19px;
     margin-top: 5rem;
     margin-bottom: 7rem;
     text-align: center; /* Horizontal alignment */
@@ -271,7 +278,7 @@ button:hover {
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 21px;
     color: black;
 }
 
@@ -285,13 +292,13 @@ button:hover {
 
 .aboutSectionText {
     text-align: left;
-    font-size: 18px;
+    font-size: 19px;
     font-family: IosevkaCharon;
 }
 
 #aboutSection1Header {
     text-align: left;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bolder;
     font-family: IosevkaCharon;
 }
@@ -320,7 +327,7 @@ button:hover {
 #aboutSectionText2 {
     max-width: 500px;
     text-align: left;
-    font-size: 18px;
+    font-size: 19px;
     font-family: IosevkaCharon;
 }
 
@@ -329,7 +336,7 @@ button:hover {
 
 #theDeveloperText {
     margin-top: 50px;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bolder;
     font-family: IosevkaCharon;
     text-align: center;
@@ -344,7 +351,7 @@ button:hover {
 
 #developerName {
     font-family: IosevkaCharon;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 #developerInfo {
@@ -355,7 +362,7 @@ button:hover {
 
 #developerInfoText {
     text-align: left;
-    font-size: 18px;
+    font-size: 19px;
     font-family: IosevkaCharon;
     max-width: 500px;
 }
@@ -635,7 +642,7 @@ button:hover {
 
 .activityHeader {
     text-align: left;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bolder;
     font-family: IosevkaCharon;
 }
@@ -643,7 +650,7 @@ button:hover {
 .activityDescription {
     max-width: 500px;
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
     font-family: IosevkaCharon;
 }
 
