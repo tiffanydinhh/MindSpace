@@ -19,7 +19,7 @@ This project was developed to strengthen my front-end web development skills, as
 **Frontend:** HTML5, CSS3, JavaScript \
 **Fonts:** AmericanTypewriter, Inika, InstrumentSans, InstrumentSerif, IosevkaCharon\
 **Version Control:** Github \
-**Project Management:** Figma (design reference) \
+**Project Management:** Figma (design reference)
 
 ## Preview
 Home Page:
