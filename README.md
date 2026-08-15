@@ -28,9 +28,6 @@ Home Page:
 Journal Page:
 <img width="2048" height="2194" alt="journal page" src="https://github.com/user-attachments/assets/754ff4a0-470a-48a3-a320-607c1dda7a05" />
 
-About Page:
-<img width="2048" height="3680" alt="about page" src="https://github.com/user-attachments/assets/c7c6d3bb-4a97-4a4e-82b5-e4d044e3a34f" />
-
 [Live Site](https://tiffanydinhh.github.io/MindSpace/) (GitHub Pages)
 
 ## Prerequisites
