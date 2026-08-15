@@ -31,7 +31,7 @@ Journal Page:
 About Page:
 <img width="2048" height="3680" alt="about page" src="https://github.com/user-attachments/assets/c7c6d3bb-4a97-4a4e-82b5-e4d044e3a34f" />
 
-[Live Site] (https://tiffanydinhh.github.io/MindSpace/)
+[Live Site](https://tiffanydinhh.github.io/MindSpace/)
 
 ## Prerequisites
 Make sure you have a working web browser (Chrome, Safari, Firefox, etc.)
