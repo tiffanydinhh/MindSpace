@@ -16,7 +16,7 @@ This project was developed to strengthen my front-end web development skills, as
 * **Branding:** Simple pastel green color scheme with pastel yellow accents.
 
 ## Tech Stack
-**Frontend:** HTML5, CSS3, JavaScript \
+**Frontend:** HTML, CSS, JavaScript \
 **Fonts:** AmericanTypewriter, Inika, InstrumentSans, InstrumentSerif, IosevkaCharon\
 **Version Control:** Github \
 **Project Management:** Figma (design reference)
@@ -29,6 +29,9 @@ Journal Page:
 <img width="2048" height="2194" alt="journal page" src="https://github.com/user-attachments/assets/754ff4a0-470a-48a3-a320-607c1dda7a05" />
 
 [Live Site](https://tiffanydinhh.github.io/MindSpace/) (GitHub Pages)
+
+## Future Plans
+* Compatibility across various devices
 
 ## Prerequisites
 Make sure you have a working web browser (Chrome, Safari, Firefox, etc.)
