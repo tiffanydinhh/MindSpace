@@ -37,7 +37,7 @@ Journal Page:
 ## Prerequisites
 Make sure you have a working web browser (Chrome, Safari, Firefox, etc.)
 
-## # Running Locally
+## Running Locally
 1. Download or clone this repository
 ```bash
 git clone https://github.com/tiffanydinhh/MindSpace.git
