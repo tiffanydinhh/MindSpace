@@ -32,6 +32,7 @@ Journal Page:
 
 ## Future Plans
 * Compatibility across various devices
+* Allow users to click on and view previously submitted journal entries
 
 ## Prerequisites
 Make sure you have a working web browser (Chrome, Safari, Firefox, etc.)
