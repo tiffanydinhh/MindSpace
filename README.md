@@ -1,5 +1,5 @@
 ## MindSpace
-**MindSpace** is a multi-page front-end website built for individuals (including myself) who struggle with anxiety, stress, and overthinking. It allows users to relax their minds by providing them with a space to journal, organize, and de-stress.
+**MindSpace** is a multi-page front-end website built for individuals who struggle with anxiety, stress, and overthinking. It allows users to relax their minds by providing them with a space to journal, organize, and de-stress.
 
 ## Purpose
 This project was developed to strengthen my front-end web development skills, as it allowed me to:
